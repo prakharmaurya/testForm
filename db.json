@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server1",
+      "details": "this is test post",
+      "userId": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1,
+      "userId": 2
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "name": "NameA",
+      "email": "a@a.com",
+      "password": "1234"
+    },
+    {
+      "id": 2,
+      "name": "NameB",
+      "email": "b@b.com",
+      "password": "1234"
+    }
+  ]
+}
