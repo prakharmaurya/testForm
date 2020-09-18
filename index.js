@@ -25,7 +25,7 @@ const formSubmit = (event) => {
     alert("password not equal");
     return;
   }
-
+  //
   axios
     .post("http://localhost:3000/profile/", {
       name: userNameHTML.value,
