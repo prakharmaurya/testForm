@@ -1,6 +1,7 @@
 const userNameHTML = document.getElementById("userName");
 const userEmailHTML = document.getElementById("userEmail");
 const userPasswordHTML = document.getElementById("userPassword");
+const userCPasswordHTML = document.getElementById("userCPassword");
 const btnformSubmitHTML = document.getElementById("formSubmitter");
 
 const formSubmit = (event) => {
@@ -10,8 +11,18 @@ const formSubmit = (event) => {
   console.log(userEmailHTML.value);
   console.log(userPasswordHTML.value);
 
-  if (!userNameHTML.value || !userEmailHTML.value || !userPasswordHTML.value) {
+  if (
+    !userNameHTML.value ||
+    !userEmailHTML.value ||
+    !userPasswordHTML.value ||
+    !userCPasswordHTML.value
+  ) {
     alert("Fille All the fields");
+    return;
+  }
+
+  if (userPasswordHTML.value !== userCPasswordHTML.value) {
+    alert("password not equal");
     return;
   }
 
